@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Your content goes here -->
+    <header>
+      <img id="logo" src="/photos/Joe.png" />
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+        <img />
+        <ul class="menu-list" id="menu-list">
+            <li class="profile-picture">
+            <img src="/photos/2by2.png" alt="Profile Picture">
+            </li>
+            <li class="name">Joezel Bermudez</li>
+            <li class="hr"><hr/></li>
+            <li class="nav-list"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+            <li class="nav-list"><a href="#about"><i class="fa fa-info" aria-hidden="true"></i> ABOUT ME</a></li>
+            <li class="nav-list"><a href="#portfolio"> <i class="fa fa-wrench" aria-hidden="true"></i> PROJECTS</a></li>
+            <li class="nav-list"><a href="#contact">CONTACT ME</a></li>
+        </ul>
+    </nav>
+    
+  </header>
+  <main>
+    <section id="home">
+        <div class="my_picture">
+            <img class="body" src="/photos/body.png"/>
+        </div>
+        <div class="introduction">
+            <h2>Hey <span>Everyone</span>, My name is <span>Joezel Bermudez</span></h2>
+            <p>Taking up a Carrer as a <span class="web-developer">Web Developer</span>.</p>
+
+        </div>
+    </section><hr />
+    <section id="about">
+        <fieldset>
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-column born">
+                <h3>Who am I</h3>
+                <p>I was born on March 27, 1994 in Brgy. Atipuluan, Bago City Negros Occidental, Philippines. A Bachelor of Science in Information System student of Bago City College. Right now, I am currently in the on-the-job training as a student of Software Development Training Program at NOLITC (Negros Occidental Language and Information Technology Center).</p>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h2>Technological Skills</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Basic HTML and CSS <br/>for the Front-End</h3>
+                    <img src="https://miro.medium.com/v2/resize:fit:1140/0*pxb9-4jdzxSp1K5Y.png ">
+                </div>
+                <div class="skills-column">
+                    <h3>Basic PHP and MYSQL <br/>for the Back-End</h3>
+                    <img src="https://www.oditeksolutions.com/wp-content/uploads/2015/10/PHP-And-MySQL.jpg" />
+                </div>
+                <div class="skills-column">
+                    <h3>Basic Electronics<br/>Troubleshooting</h3>
+                    <img src="https://img.freepik.com/premium-photo/electronics-repair-metering-parameters-broken-electronic-board-professional-repairman_290947-489.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+</fieldset>
+    <hr />
+  
+  <section id="portfolio" class="py-5">
+    <div class="container-sm">
+      <h2 class="text-center mb-4" style="color: #ff6600;">Projects</h2>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-content">
+                <img src="/photos/calorie counter.png" class="d-block w-100" alt="Slide 1">
+                <a href="https://calorie-counter-rho.vercel.app/" style="text-decoration: none;">
+                <h4 class="text-center mt-3">Calorie Counter App</h4>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+                <img src="/photos/calendar.png" class="d-block w-100 " alt="Slide 2">
+                <a href="https://calendar-seven-xi.vercel.app/" style="text-decoration: none;">
+                <h4 class="text-center mt-3">Calendar App</h4>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+                <img src="/photos/mp3.png" class="d-block w-100 " alt="Slide 3">
+                <a href="https://mp3-app-alpha.vercel.app/" style="text-decoration: none;">
+                <h4 class="text-center mt-3">MP3 App</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+</main>
+<footer id="contact" class="bg-dark text-white py-5">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+          <p><i class="fa fa-envelope me-2"></i><a href="mailto:joeberz27@gmail.com" class="text-white">joeberz27@gmail.com</a> </p>
+          <p><i class="fa fa-phone me-2"></i> 09270076136</p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/zcell27" target="_blank" class="text-white mx-2"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/joezelbermudez/" target="_blank" class="text-white mx-2"><i class="fa fa-facebook fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+/* General styles */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  text-align: justify;
+}
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content:center;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1000; /* Add a high z-index value */
+}
+
+#logo {
+  margin-right: 10vw;
+  width: 9vw;
+  height: 6vh;
+  background-color: #fa4e0a;
+}
+
+.my_picture {
+  width: 40%;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my_picture > .body {
+  background:url("https://assets.technologynetworks.com/production/dynamic/images/content/368887/science-is-becoming-less-disruptive-368887-960x540.jpg?cb=12105518");
+  background-blend-mode:darken;
+  border-style:  double;
+  margin-top: 15vh;
+  width: 80%;
+  top:30%;
+  left: 30.5%;
+  border-radius:50%;
+  border-color: rgba(225, 110, 16, 0.941);
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {border-color: lightblue;}
+}
+
+.introduction {
+  width: 55%;
+  font-size: larger;
+  float: left;
+  text-align:center;
+  padding: 22vh 0px;
+}
+
+.introduction > h2 {
+  color: #ffffff;
+
+}
+
+.introduction > h2 > span {
+  color: #ff6600;
+  font-size: 34px;
+
+}
+.introduction > p  {
+  font-size: 24px;
+  color: #fff;
+
+}
+
+ .web-developer {
+color:#ecedac;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bolder;
+font-size: larger;
+animation: glow 2s ease-in-out infinite 
+}
+
+/* @keyframes glow {
+  from {
+    text-shadow: 0 0 20px #2d9da9;
+  }
+  to {
+    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+  }
+} */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+}
+header h1 {
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+  color:#ff6600;
+}
+nav {
+  margin-right: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+/* nav ul li a {
+  color: #fff;
+  text-decoration: none;
+} */
+/* Section styles */
+section {
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#home {
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+/* para sa about section */
+section, #about {
+  padding-top: 60px;
+}
+#about {
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+.about-column {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-column.born {
+  background-color: #2d9da9;
+}
+
+.about-column.born > p {
+  text-align: justify;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16pt;
+}
+
+/* end sang about section */
+/* para sa skills section */
+/* section, #skills {
+  padding-top: 60px;
+} */
+#skills {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+
+}
+
+#skills > h2 {
+  text-align: center;
+  color:#ff6600;
+  padding-top: 20px;
+}
+
+.skills-column {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: add border-radius to images */
+}
+
+
+
+/* .about-column.born {
+  background-color: #2d9da9;
+}
+
+.about-column.born > p {
+  text-align: justify;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16pt;
+} */
+
+/* end sang skills section */
+section h2 {
+  margin-bottom: 1rem;
+}
+
+
+
+section, #portfolio {
+  padding-top: 60px;
+}
+
+
+/* Navigation styles */
+nav {
+  margin-left: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list li a.active {
+  color: #ff6600; /* Change to your desired active color */
+  font-weight: bold; /* Or any other style you prefer */
+  text-decoration:underline burlywood 5px;
+}
+
+.menu-toggle {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-list a:hover {
+  color: #ff0606;
+
+}
+
+.profile-picture {
+  display: none; /* Hide by default on larger screens */
+  margin-right: 10px; /* Add margin for spacing */
+}
+
+.name {
+  display:none;
+}
+.hr {
+  display: none;
+}
+
+header .bar {
+  display:none;
+}
+.profile-picture img {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%; /* Make it round */
+  margin-left: 25px;
+  margin-top: -40px;
+}
+
+/* footer */
+
+footer { 
+  height: 15vh;
+  background-color: #333;
+}
+
+/* Para sa mobile view */
+
+@media (max-width: 668px) {
+
+  header {
+      padding: 1rem;
+      justify-content:space-between;
+  }
+  .profile-picture {
+    display: block; /* Show on smaller screens */
+    margin-right: 0; /* Remove margin for spacing */
+    margin-bottom: 10px; /* Add margin below the profile picture */
+}
+
+#logo {
+  display: inline-block;
+  width: 20vw;
+  height: 5vh;
+  background-color: #fa4e0a;
+}
+
+#logo {
+  float: right;
+}
+
+#home {
+  height: 100svh;
+  margin-bottom: 30px;
+}
+
+#about {
+  margin-top: 80px;
+}
+
+.about-column {
+  flex-basis: calc(50% - 30px);
+}
+
+#skills {
+  margin-top: 80px;
+}
+
+.skills-column {
+  flex-basis: calc(50% - 30px);
+}
+
+
+.my_picture {
+  width: 100%; /* Increase image width for better visibility */
+  float: none; /* Remove float for better positioning */
+  margin: -50px 20px; /* Center the image */
+}
+
+.introduction {
+  width: 80%; /* Increase width for better readability */
+  padding: 10% 0;
+  margin: 0 20px; /* Adjust padding for better spacing */
+}
+
+.name {
+  display:block;
+  padding-left: 20px;
+}
+
+  header h1 {
+    position: relative;
+  }
+  header .bar {
+    display:block;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #d24a06;
+  }
+
+  .hr {
+    display:block;
+    width:inherit;
+    color:#ff0606 !important;
+  }
+  
+.nav-list {
+    padding-left: 70px;
+  }
+
+  .menu-toggle {
+      display: block; /* Show on smaller screens */
+      margin-bottom: 10px; /* Add some space between toggle and menu */
+  }
+
+  .menu-list {
+      flex-direction: column;
+      display: none; /* Hide by default on smaller screens */
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px; /* Adjust width as needed */
+      height: 100%;
+      padding-top: 50px; /* Add padding for menu items */
+  }
+
+  .menu-list.active {
+      display: flex; /* Show when active */
+  }
+
+  .menu-list li {
+      margin: 10px 0;
+  }
+}
+
